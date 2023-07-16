@@ -1,10 +1,10 @@
 import React from 'react';
-import Home from '../Home/Home';
+// import Home from '../Home/Home';
 
 const About = () => {
     return (
         <div>
-            <Home></Home>
+            {/* <Home></Home> */}
             <h4>This is the About Page</h4>
         </div>
     );
