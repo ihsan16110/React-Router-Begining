@@ -6,6 +6,7 @@ import Home from './components/Home/Home';
 import Products from './components/Products/Products';
 import Main from './layout/Main';
 import Friends from './components/Friends/Friends';
+import FriendDetails from './components/FriendDetails/FriendDetails';
 
 function App() {
 
@@ -15,13 +16,26 @@ function App() {
       {path: '/',element:<Home></Home>},
       {path: '/home',element:<Home></Home>},
       {path: '/products',element:<Products></Products>},
-      {path: '/friends',
+      {
+        path: '/friends',
         loader: async() => {
           return fetch('https://jsonplaceholder.typicode.com/users')
         },
       
-      element:<Friends></Friends>},
+      element:<Friends></Friends>
+     },
       {path:'/about',element:<About></About>},
+
+      {
+        path:'/friend/:friendId',
+        loader: async({params}) =>{ // taking params using destructuring 
+          // console.log(params.friendId)
+          // return null;
+          return fetch(`https://jsonplaceholder.typicode.com/users/${params.friendId}`)
+        },
+        element:<FriendDetails></FriendDetails>
+      }
+
     ] 
 
   },

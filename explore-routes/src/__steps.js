@@ -48,7 +48,7 @@
 
  shell
  Copy code
- git pull origin master
+ 
 
 */
 
