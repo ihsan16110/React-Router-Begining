@@ -9,6 +9,49 @@
 8.
 */
 
+/*GIT Commands
+ git init
+
+ git add  .
+
+ git commit -git add m “....”
+
+ git status 
+
+ git remote add origin URL
+
+ git push origin master
+
+
+ master Or main
+
+
+ Update git with fetching 
+ This sequence of commands will stage all changed files in the current directory and its subdirectories, create a commit with the message you specify, and push the changes to the remote repository.
+
+ git add .
+ git commit -m "Your commit message here"
+ git push origin master
+
+
+ git add .   stages all changed files in the current directory and its subdirectories.
+ git commit -m "Your commit message here"   creates a commit with the message you specify.
+ git push origin master    pushes the changes in your local repository to the remote repository.
+
+ This error message indicates that the branch you are trying to push, in this case, the master branch, has diverged from the remote branch. This typically happens when there have been new commits pushed to the remote repository since your last interaction with it.
+
+ To resolve this issue, you need to incorporate the remote changes into your local branch before pushing again. You can do this by following these steps:
+
+ First, navigate to your project's directory using the command line or terminal.
+
+ Execute the following command to pull the latest changes from the remote repository:
+
+ shell
+ Copy code
+ git pull origin master
+
+*/
+
 
 /*
 Things you need to create a route

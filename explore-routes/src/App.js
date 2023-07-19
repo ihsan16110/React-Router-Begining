@@ -20,10 +20,13 @@ function App() {
           return fetch('https://jsonplaceholder.typicode.com/users')
         },
       
-      element:<Friends></Friends>}
-    ] },
+      element:<Friends></Friends>},
+      {path:'/about',element:<About></About>},
+    ] 
+
+  },
  
-    {path:'/about',element:<About></About>},
+    // {path:'/about',element:<About></About>},
     {path:'*',element:<div>This route not found</div>}
 
 
