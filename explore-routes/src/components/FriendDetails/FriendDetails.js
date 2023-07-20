@@ -3,10 +3,11 @@ import { useLoaderData } from 'react-router';
 
 const FriendDetails = () => {
     const friend = useLoaderData();
-    console.log(friend);
+    // console.log(friend);
     return (
         <div>
-            <h1>Friends Details Page </h1>
+            <h1>Friends Details About: {friend.name} </h1>
+            <p>Call him one her/her: {friend.phone}</p>
             <h2>Everything you need to know about this person</h2>
         </div>
     );
